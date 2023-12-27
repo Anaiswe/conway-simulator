@@ -1,0 +1,56 @@
+
+.controls {
+    /* border: solid salmon 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 50px;
+  }
+
+  .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+    /* border: solid rgb(255, 255, 255) 3px; */
+    padding: 20px;
+             
+
+  }
+
+  .play.running {
+    background-color: tomato;
+  }
+
+  .play:hover {
+    cursor: pointer;
+             
+
+  }
+
+  .refresh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid magenta 3px; */
+    background: cornflowerblue;
+    padding: 20px;
+  }
+
+  .refresh:hover {
+    cursor: pointer;
+             
+
+  }
+
+  .start-stop-clear {
+    width: 1em;
+    height: 1em;
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+
+  
+  

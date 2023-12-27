@@ -1,0 +1,53 @@
+.game-container {
+  background: rgb(0, 0, 38);
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(30, 20px);
+  gap: 1px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  cursor: crosshair;
+  transition: background-color 0.3s, filter 0.3s;
+}
+
+.alive {
+  /* Couleur de fond pour les cellules vivantes avec effet de galaxie */
+  background-color: transparent;
+  background-image: radial-gradient(rgb(255, 255, 255) 0%, transparent 70%);
+
+  /* Filtrage pour un effet de brillance */
+  filter: brightness(150%);
+}
+
+.alive.dim {
+  filter: brightness(50%);
+}
+
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(30, 20px);
+  gap: 1px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  cursor:crosshair;
+  transition: background-color 0.3s, filter 0.3s; 
+}
+
+.alive {
+  background-color: #b3b0f0; 
+  filter: brightness(150%); 
+}
+
+.alive.dim {
+  filter: brightness(50%);
+} */
