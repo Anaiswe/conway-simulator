@@ -7,15 +7,7 @@ import Controls from './Containers/Controls/Controls';
 import useGameLogic from './Functions/GameLogic';
 
 const App = () => {
-  const spaceshipAscii = `
-                  .
-                 -"\
-        .-----  /    \\
-       /  6 6  \\      \\
-      \\  \\  o  )/______/
-      (<  \\ -- \\
-       \\ --_ \\_\\
-  `;
+
 
   const {
     grid,
@@ -40,9 +32,8 @@ const App = () => {
           handleCellClick={handleCellClick}
           gameContainerColor={gameContainerColor}
         />
-        <pre style={{ color: '#7fdbff', fontFamily: 'monospace' }}>{spaceshipAscii}</pre>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
