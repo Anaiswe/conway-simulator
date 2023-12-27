@@ -1,7 +1,7 @@
 // App.js
 import React from 'react';
 import './App.css';
-import Footer from './Containers/Footer/Footer/Footer';
+// import Footer from './Containers/Footer/Footer/Footer';
 import GameContainer from "./Containers/GameContainer/GameContainer"
 import Controls from './Containers/Controls/Controls';
 import useGameLogic from './Functions/GameLogic';

@@ -2,7 +2,7 @@ import "./controls.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faStop, faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
 
-import useGameLogic from "../../Functions/GameLogic";
+// import useGameLogic from "../../Functions/GameLogic";
 
 const Controls = ({ running, handleStartStopClick, handleClearClick }) => {
     return (
