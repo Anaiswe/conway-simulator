@@ -3,17 +3,16 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 
 //nombre de lignes et de colonnes dans la grille
-const numRows = 50;
+const numRows = 30;
 const numCols = 30;
 
-//génère une grille vide de dimensions numRows x numCols avec des cellules initialisées aléatoiremen
-// ...
+//génère une grille vide de dimensions numRows x numCols avec des cellules initialisées aléatoirement
+
 const generateEmptyGrid = () => {
   return Array.from({ length: numRows }, () =>
     Array.from({ length: numCols }, () => Math.random() > 0.7 ? 1 : 0)
   );
 };
-// ...
 
 
 //crée une copie profonde de la grille passée en argument

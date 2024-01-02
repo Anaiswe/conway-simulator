@@ -1,5 +1,5 @@
 .game-container {
-  border: solid rgb(195, 196, 195) 0.1px;
+  /* border: solid rgb(195, 196, 195) 0.1px; */
   padding: 10px;
 
 
@@ -7,7 +7,7 @@
 
 
 .grid {
-  max-height: calc(100vh - 100px);
+  /* max-height: calc(100vh - 100px); */
   display: grid;
   width: 100%;
   grid-template-columns: repeat(30, 15px);
