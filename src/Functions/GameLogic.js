@@ -3,15 +3,18 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 
 //nombre de lignes et de colonnes dans la grille
-const numRows = 20;
+const numRows = 50;
 const numCols = 30;
 
 //génère une grille vide de dimensions numRows x numCols avec des cellules initialisées aléatoiremen
+// ...
 const generateEmptyGrid = () => {
   return Array.from({ length: numRows }, () =>
     Array.from({ length: numCols }, () => Math.random() > 0.7 ? 1 : 0)
   );
 };
+// ...
+
 
 //crée une copie profonde de la grille passée en argument
 const copyGrid = (grid) => {
@@ -19,6 +22,7 @@ const copyGrid = (grid) => {
 };
 
 const useGameLogic = () => {
+  
   const [grid, setGrid] = useState(() => generateEmptyGrid());
   const [running, setRunning] = useState(false);
 
@@ -79,6 +83,8 @@ const useGameLogic = () => {
   useEffect(() => {
    
   }, [grid]);
+
+  
 
   return {
     grid,
